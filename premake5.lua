@@ -7,6 +7,8 @@ project "yaml-cpp"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin/" .. outputdir .. "/%{prj.name}")
 
+    defines "YAML_CPP_STATIC_DEFINE"
+
     files
     {
         "src/**.h",
